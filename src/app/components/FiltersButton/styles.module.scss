@@ -1,0 +1,21 @@
+
+.countHolder {
+  position: relative;
+  width: 0;
+  height: 0;
+  transform: translate(16px, -17px);
+  pointer-events: none;
+
+  .count {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    color: var(--supportive-text-color);
+    background: var(--secondary-background-color);
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

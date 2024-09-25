@@ -1,0 +1,33 @@
+
+@import '../../styles/constants.scss';
+
+.pageLayout {
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  width: calc(100vw - 250px);
+  margin-left: auto;
+
+  .main {
+    padding-top: 50px;
+    
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+
+  
+  @media screen and (max-width: $small-screen) {
+    .main {
+      padding-top: 36px;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+
+  @media screen and (max-width: $tablet-screen) {
+    width: 100vw;
+    margin-left: unset;
+  }
+}

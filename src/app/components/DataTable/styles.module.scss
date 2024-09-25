@@ -1,0 +1,20 @@
+@import '../../styles/constants.scss';
+
+.childrenHolder, .headerRefreshHolder {
+  margin-bottom: 15px;
+}
+
+.headerRefreshHolder {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  flex: 1;
+
+  @media screen and (max-width: $tablet-screen) {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}

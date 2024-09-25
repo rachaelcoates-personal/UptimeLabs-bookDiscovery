@@ -1,0 +1,58 @@
+@import '../../styles/constants.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between hamburger and logo */
+  align-items: center;
+  padding: 0 4%; /* Even padding on both sides */
+  background-color: #03033b; /* Set the background color */
+  z-index: 1500; /* Ensure the header is above other content */
+}
+
+.logoHolder {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  width: 90%;
+}
+.logo{
+  max-width: 200px;
+  height: auto ;
+}
+
+.hamburgerButton {
+  display: none;
+  width: 10%;
+  justify-content: flex-start; /* Align hamburger to the left */
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: $small-screen) {
+  .header {
+    padding: 0 4%; /* Maintain even padding on smaller screens */
+  }
+
+}
+
+@media screen and (max-width: $tablet-screen) {
+  .header {
+    padding: 0 4%; /* Maintain even padding on tablet screens */
+  }
+  .hamburgerButton {
+    display: flex; /* Show hamburger on tablet and smaller screens */
+  }
+}
+
+@media screen and (max-width: $mobile-screen) {
+  .header {
+    padding: 0 4%; /* Maintain even padding on mobile screens */
+  }
+  .hamburgerButton {
+    display: flex; /* Show hamburger on tablet and smaller screens */
+  }
+}
